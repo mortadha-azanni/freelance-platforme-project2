@@ -16,7 +16,6 @@ const ServiceCard = ({ service }) => {
             <p className="text-base">{service.description}</p>
             <div className="text-sm space-y-1">
               <p><span className="font-semibold">Email:</span> {service.contact}</p>
-              <p><span className="font-semibold">Category:</span> {service.category}</p>
             </div>
           </div>
           <button
