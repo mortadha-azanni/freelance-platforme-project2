@@ -1,0 +1,123 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90vw;
+    max-width: 600px; 
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before, .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .success {
+    color: green;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .input {
+    height: 50px;
+    font-size: 1.2em;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .description {
+    font-size: 1.2em;
+    padding: 10px;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    outline: 0;
+    resize: vertical;
+    color: rgba(88, 87, 87, 0.822);
+    margin-bottom: 10px;
+    height: 100px;
+    width: 80%;
+    max-width: 600px;
+    margin: 10px auto;
+    background-color: #f9f9f9;
+  }
+  
+  .submit {
+    display: block;
+    margin: 20px auto;
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    width: 80%;
+    height: 50px;
+  }
+  
+  .submit:hover {
+    background-color: rgb(56, 90, 194);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+  

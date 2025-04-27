@@ -26,7 +26,26 @@ function Home() {
 
   return (
     <div className="p-4">
-      <h2 className="text-2xl font-bold mb-4">Services disponibles</h2>
+      <h2 className="text-2xl font-bold mb-4" style={{
+        textAlign: 'center',
+        marginTop: '20px',
+        fontFamily: 'Courier New, Courier, monospace',
+        color: '#333',
+        fontSize: '2rem',
+        fontWeight: 'bold',
+        textTransform: 'uppercase',
+        letterSpacing: '2px',
+        textShadow: '2px 2px 4px rgba(0, 0, 0, 0.1)',
+        background: 'linear-gradient(to right, #6a11cb, #2575fc)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text',
+        textFillColor: 'transparent',
+        marginBottom: '20px',
+        textDecoration: 'underline',
+        textDecorationColor: '#6a11cb',
+        textDecorationThickness: '2px',
+      }}>Services disponibles</h2>
       <div className="container-Pub">
         {services.map((service) => (
           <ServiceCard key={service._id} service={service} />

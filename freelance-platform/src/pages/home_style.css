@@ -4,16 +4,10 @@
     justify-content: center;
     margin-top: 20px;
     flex-wrap: wrap;
+    gap: 20px;
 }
-.Pub{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    background-color: red;
-    border-radius: 20px;
-    padding: 20px;
-    width: 300px;
-    margin: 20px;
+.animeTxT{
+    font-size: 100px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
